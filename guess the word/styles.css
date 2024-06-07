@@ -1,0 +1,105 @@
+body {
+    background-color: rgb(27, 172, 140);
+}
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+#line{
+    border-radius: 5px;
+    width: 13px;
+    height: 250px;
+    background-color: white;
+
+}
+#A{
+    margin-top   : -20px;
+}
+#B{
+    margin-top: -20px;
+}
+#title{
+    text-transform: capitalize;
+    margin-left:20px ;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+}
+#container{
+    margin-left: 150px;
+    background-color: white;
+    width: 350px;
+    height: 330px;
+    border-radius: 10px;
+}
+#text{
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    color: rgb(51, 51, 51);
+    margin-top: 20px;
+    margin-left: 15px;
+}
+#break{
+    height: 2px;
+    width: 350px;
+    background-color: rgb(199, 199, 199);
+    margin-top: 16px;
+}
+#input{
+    margin-top: 20px;
+    display: flex;
+}
+#box{
+    margin-left: 10px;
+    width: 36px;
+    height: 36px;
+    border: 1px solid rgb(180, 180, 180);
+    border-radius: 5px;
+    cursor: pointer;
+    transition:.5s all;
+    text-align: center;
+    outline-color:  rgb(27, 172, 140);;
+    color:  rgb(27, 172, 140);
+    font-weight: bolder;
+    font-size: larger;
+    text-transform: capitalize;
+}
+#box:hover{
+    border-color: rgb(27, 172, 140);
+}
+#message{
+    margin-left: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: rgb(51, 51, 51);
+
+}
+#hint{
+    margin-bottom: 8px;
+}
+#remain_guess{
+    margin-top: 8px;
+}
+button{
+    margin-top: 30px;
+    cursor: pointer;
+    background-color: rgb(27, 172, 140);
+    border: none;
+    border-radius: 5px;
+    width: 290px;
+    height: 50px;
+    margin-left: 30px;
+    color: white;
+    text-transform: capitalize;
+    transition: .5s;
+}
+button:hover{
+    background-color:  rgb(21, 139, 114);
+    ;
+}
