@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Todo App</title>
+</head>
+<body>
+    <div id="container">
+        <div class="header">
+            <h1 style="margin-right: 10px;">Todo </h1>
+            <input autofocus id="input" type="text" placeholder="Add your new todo">
+            <button id="add" onclick="add()">+</button>
+        </div>
+        <div id="belowinput">
+            <div class="task" id="task1">
+                <div class="task-content" id="_1"></div>
+                <button class="remove-btn" id="b1" onclick="remove(id)" >-</button>
+            </div>
+            <div class="task" id="task2">
+                <div class="task-content" id="_2"></div>
+                <button class="remove-btn" id="b2" onclick="remove(id)">-</button>
+            </div>
+            <div class="task" id="task3">
+                <div class="task-content" id="_3"></div>
+                <button class="remove-btn" id="b3" onclick="remove(id)">-</button>
+            </div>
+            <div class="task" id="task4">
+                <div class="task-content" id="_4"></div>
+                <button class="remove-btn" id="b4" onclick="remove(id)">-</button>
+            </div>
+            <div class="task" id="task5">
+                <div class="task-content" id="_5"></div>
+                <button class="remove-btn" id="b5" onclick="remove(id)">-</button>
+            </div>
+            <div id="footer">
+                <button id="message"></button>
+                <div id="clear" onclick="clearall()">Clear All</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
