@@ -67,9 +67,35 @@ body {
     font-weight: bolder;
     font-size: larger;
     text-transform: capitalize;
+    caret-color: transparent;
+    background-color: transparent;
+    box-shadow: black;    
 }
 #box:hover{
     border-color: rgb(27, 172, 140);
+}
+#box1{
+    margin-left: 10px;
+    width: 36px;
+    height: 36px;
+    border: 1px solid rgb(180, 180, 180);
+    border-radius: 5px;
+    cursor: pointer;
+    transition:.5s all;
+    text-align: center;
+    outline-color:  rgb(27, 172, 140);;
+    color:  rgb(27, 172, 140);
+    font-weight: bolder;
+    font-size: larger;
+    text-transform: capitalize;
+    caret-color: transparent;
+    background-color: transparent;
+}
+#box1:hover{
+    border-color: rgb(27, 172, 140);
+}
+button{
+    width: 40px;
 }
 #message{
     margin-left: 24px;
@@ -84,9 +110,9 @@ body {
     margin-bottom: 8px;
 }
 #remain_guess{
-    margin-top: 8px;
+    margin-bottom: 8px;
 }
-button{
+#reset{
     margin-top: 30px;
     cursor: pointer;
     background-color: rgb(27, 172, 140);
@@ -99,7 +125,7 @@ button{
     text-transform: capitalize;
     transition: .5s;
 }
-button:hover{
+#reset:hover{
     background-color:  rgb(21, 139, 114);
-    ;
+    
 }

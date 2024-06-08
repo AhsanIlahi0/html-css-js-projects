@@ -19,10 +19,10 @@
             <div id="text">guess the word</div>
             <div id="break"></div>
             <div id="input">
-                <input id="box" maxlength="1" style="margin-left: 24px;">
-                <input id="box" maxlength="1" value="y">
+                <input id="box" maxlength="1" autofocus style="margin-left: 24px;">
+                <button id="box1" maxlength="1"  style="width: 40px; height: 40px;">y</button>
                 <input id="box" maxlength="1">
-                <input id="box" maxlength="1" value="h">
+                <button id="box1" maxlength="1" style="width: 40px; height: 40px;">h</button>
                 <input id="box" maxlength="1" >
                 <input id="box" maxlength="1">
             </div>
@@ -31,6 +31,9 @@
                 <div id="hint">Hint: programming language </div>
                 <div id="remain_guess">remaining guesses: </div>
                 <div id="guessed">wrong letters: </div>
+                
+                <div id="win"></div>
+
             </div>
             <button id="reset" onclick="reset()">reset game</button>
         </div>
