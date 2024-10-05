@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="score-title">
+        <div name="" id="title">
+            <div>Rock Paper</div>
+            <div>Scissors</div>
+            
+        </div>
+        <div id="sc1">
+            <div style="font-size: 13px; color: rgb(17, 91, 175);">you</div>
+        <div id="you">
+            0
+        </div>    
+        </div>
+        <div id="sc2">
+            <div style="font-size: 13px; color: rgb(17, 91, 175);">computer</div>
+            <div id="computer">
+                0
+            </div>
+        </div>
+    </div>
+    <div id="game">
+        <div id="rock" style="color: rgb(71, 172, 202);">
+            Rock
+            <br>
+            <div id="img1">
+                <img id="rock_clicked" onclick="select(id)" src="images/rock.png"  alt="">
+            </div>
+        </div>
+        <div id="paper"  style="color: rgb(187, 88, 88); width: 225px;">
+            Paper
+            <br>
+            <div id="img2">
+                <img id="paper_clicked" style="margin-left: -1px;" onclick="select(id)" src="images/paper.png" alt="">
+            </div>
+        </div>
+        <div id="scissors" style="color: rgb(228, 182, 33); margin-right: -30px;">
+            scissors
+            <br>
+            <div id="img3">
+                <img id="scissor_clicked" onclick="select(id)" src="images/scissor.png" style="margin-left: 3px;" alt="">
+            </div>
+        </div>
+        
+    </div>
+    <div id="buttons">
+        <button id="choose" onclick="computer_choice()">choose</button>
+        <button id="reset" onclick="reset()" style="margin-left: 30px;"> reset score</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

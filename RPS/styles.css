@@ -1,0 +1,129 @@
+/* General Body Styling */
+body {
+    background: linear-gradient(135deg, rgb(8, 68, 82) 0%, rgb(88, 159, 172) 100%);
+    font-family: 'Arial', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Title Section Styling */
+#title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: white;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Score Section Styling */
+#score-title {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 390px;
+    height: 160px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+#sc1, #sc2 {
+    margin-right: 20px;
+    font-size: 35px;
+    width: 70px;
+    height: 70px;
+    color: #153548;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#sc1 div, #sc2 div {
+    text-align: center;
+    /* margin-left: 6px; */
+    width: 100px;
+    font-size: 13px;
+    color: #115BAF;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Game Section Styling */
+#game {
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+    margin-top: 40px;
+}
+
+#game > div {
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(44, 219, 111);
+    font-weight: bold;
+    padding: 10px;
+}
+
+#img1,#img2,#img3 {
+    
+    width: 150px; /* Ensure the container is square */
+    height: 150px;
+    border-radius: 50%; /* Make it circular */
+    overflow: hidden; /* Hide any overflowing part of the image */
+    margin: 20px auto; /* Center the image within its container */
+}
+
+img {
+    transition: 0.3s;
+    border-radius: 50%;
+    /* margin-left: 10px; */
+    width: 100%; /* Make the image fill the container */
+    height: 100%; /* Ensure the image covers the whole container */
+    object-fit: cover; /* Scale the image to cover the container without distortion */
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+
+img:hover {
+    transform: scale(1.1);
+}
+
+/* Button Styling */
+#choose, #reset {
+    background-color: #0A74DA;
+    border-radius: 25px;
+    width: 150px;
+    height: 50px;
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin: 30px 20px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#choose:hover, #reset:hover {
+    background-color: #0753a0;
+    transform: translateY(-3px);
+}
+
+/* Buttons Container */
+#buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
