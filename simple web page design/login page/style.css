@@ -21,7 +21,6 @@ body{
     background: url(5.jpg) no-repeat center center/cover;
     color: white;
     overflow: hidden;
-    overflow: hidden;
 }
 main{
     width: 350px;
@@ -41,7 +40,7 @@ form{
     width: 80%;
     flex-direction:column;
     text-align: center;
-    transition: .3s;
+    transition: 1s;
 }
 header{
     margin-bottom: 30px;
@@ -73,6 +72,7 @@ i{
     background-color: rgba(255, 255, 255, 0.726);
     padding-right: 4px;
     color: black;
+    transition: 0.2s;   
     /* border-block-start-color: 6px white; */
 }
 input{
@@ -105,6 +105,7 @@ button::before{
     outline: none;
 }
 button:hover::before{
+    /* border: n; */
     inset: calc(var(--border)*-2); 
 }
 .footer{

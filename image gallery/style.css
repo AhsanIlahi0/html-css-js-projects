@@ -21,14 +21,14 @@
     width: 100%;
     padding-bottom: 5%;
     cursor: pointer;
-    transition: 0.2s;
+    transition: 0.5s;
     border-radius: 20px;
 }
 .main img:hover{
-    border: 5px rgb(0, 255, 213) solid;
+    /* border: 5px rgb(0, 255, 213) solid; */
     padding: 0%;
     outline-offset: 2px;
-    transform: scale(0.8) rotate(10deg);
+    transform: scale(0.8) rotate(6deg);
     border-radius: 10px;
     box-shadow: 0 32px 75px rgba(66, 91, 138, 0.2);
     border-radius: 20px;

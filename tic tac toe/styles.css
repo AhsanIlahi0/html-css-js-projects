@@ -92,6 +92,7 @@ button:hover {
     border: 1px solid #FF6F00; /* Orange border */
     color: #FF6F00; /* Orange text */
     margin: 0 10px; /* Add some spacing between the turn indicators */
+    
 }
 
 #turn1 {

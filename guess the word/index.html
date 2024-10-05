@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
-
+    <title>Guess the Word Game</title>
 </head>
 <body>
     <div id="main">
         <div id="line"></div>
         <div id="title">
-            <h1>Guesss a </h1>
+            <h1>Guess a</h1>
             <h1 id="A">word game</h1>
             <h1 id="B">by javascript</h1>
         </div>
@@ -19,21 +18,20 @@
             <div id="text">guess the word</div>
             <div id="break"></div>
             <div id="input">
-                <input id="box" maxlength="1" autofocus style="margin-left: 24px;">
-                <button id="box1" maxlength="1"  style="width: 40px; height: 40px;">y</button>
+                <input id="box" maxlength="1" autofocus>
                 <input id="box" maxlength="1">
-                <button id="box1" maxlength="1" style="width: 40px; height: 40px;">h</button>
-                <input id="box" maxlength="1" >
                 <input id="box" maxlength="1">
+                <input id="box" maxlength="1">
+                <input id="box" maxlength="1">
+                <input id="box" maxlength="1">
+                <!-- <input id="box" maxlength="1"> -->
             </div>
             <br>
             <div id="message">
-                <div id="hint">Hint: programming language </div>
+                <div id="hint">Hint: country</div>
                 <div id="remain_guess">remaining guesses: </div>
                 <div id="guessed">wrong letters: </div>
-                
-                <div id="win"></div>
-
+                <div id="win" hidden>you won</div>
             </div>
             <button id="reset" onclick="reset()">reset game</button>
         </div>
