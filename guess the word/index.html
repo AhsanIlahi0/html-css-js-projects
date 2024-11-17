@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Guess the Word Game</title>
+</head>
+<body>
+    <div id="main">
+        <div id="line"></div>
+        <div id="title">
+            <h1>Guess a</h1>
+            <h1 id="A">word game</h1>
+            <h1 id="B">by javascript</h1>
+        </div>
+        <div id="container">
+            <div id="text">guess the word</div>
+            <div id="break"></div>
+            <div id="input">
+                <input id="box" maxlength="1" autofocus>
+                <input id="box" maxlength="1">
+                <input id="box" maxlength="1">
+                <input id="box" maxlength="1">
+                <input id="box" maxlength="1">
+                <input id="box" maxlength="1">
+                <!-- <input id="box" maxlength="1"> -->
+            </div>
+            <br>
+            <div id="message">
+                <div id="hint">Hint: country</div>
+                <div id="remain_guess">remaining guesses: </div>
+                <div id="guessed">wrong letters: </div>
+                <div id="win" hidden>you won</div>
+            </div>
+            <button id="reset" onclick="reset()">reset game</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

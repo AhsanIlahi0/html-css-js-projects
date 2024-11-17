@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>
+            Image Gallery
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="bg">
+            <h2 style="text-align: center; font-weight: 100; padding-top: 70px; color: #14addc; text-transform: uppercase; " >                                            
+                Image Gallery</h2>
+            
+            <div class="full-img" id="fullImgBox">
+                <img src="1.jpg" alt="image is missing" width="700px" height="300px" id="fullImg">
+                <span onclick="closefullimg()">X</span>
+            </div>
+            <div class="main">
+                <img src="1.jpg" alt="image is missing" width="200px" height="200px" onclick="openfullimage(this.src)">
+                <img src="2.jpg" alt="image is missing" width="200px" height="200px" onclick="openfullimage(this.src)">
+                <img src="3.jpg" alt="image is missing" width="200px" height="200px" onclick="openfullimage(this.src)">
+                <img src="4.jpg" alt="image is missing" width="200px" height="200px" onclick="openfullimage(this.src)">
+                <img src="5.jpg" alt="image is missing" width="200px" height="200px" onclick="openfullimage(this.src)">
+                <img src="6.jpg" alt="image is missing" width="200px" height="200px" onclick="openfullimage(this.src)">
+                <img src="7.jpg" alt="image is missing" width="200px" height="200px" onclick="openfullimage(this.src)">
+                <img src="8.jpg" alt="image is missing" width="200px" height="200px" onclick="openfullimage(this.src)">
+            </div>
+        </div>
+        <script>
+            var fullImgBox=document.getElementById("fullImgBox");
+            var fullImg=document.getElementById("fullImg");
+            function openfullimage(pic){
+                fullImgBox.style.display="flex";
+                fullImg.src=pic;
+            }
+            function closefullimg(){
+                fullImgBox.style.display="none";
+            }
+        </script>
+    </body>
+</html>

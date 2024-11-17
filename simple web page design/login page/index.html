@@ -1,0 +1,113 @@
+<html>
+
+<head>
+    <title>
+        login page
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+    <main>
+        <form id="login">
+            <header>
+                <h2>Login</h2>
+                <br>
+                <p style="font-size: medium;">login here using your username and password</p>
+                <!-- <br> -->
+            </header>
+            <div class="wrapper" style="margin-bottom: 5px;">
+                <i class="Material-symbols-outlined" style="margin-bottom: 5px;">person</i>
+                <input type="text" placeholder="Username" required>
+            </div>
+            <div class="wrapper">
+                <i class="Material-symbols-outlined" style="margin-bottom: 5px; width: 60px ;">lock</i>
+                <input type="password" placeholder="Password" id="password">
+
+                <i onclick="change_show()" class="Material-symbols-outlined show_pass"
+                    style="margin-bottom: 5px; height: 40px; width: 60px;"> visibility_off </i>
+
+            </div>
+            <div class="wrapper remember">
+                <input id="check" type="checkbox" style="margin-bottom: 5px; font-size: 2px;" required> Remember me
+                <label for="check"></label>
+            </div>
+            <button style="margin-bottom: 10px;">log in</button>
+            <p class="footer" style="margin-bottom: 5px;">
+                don't have an account <a href="#" onclick="switchmode()"> sign up</a>
+            </p>
+
+        </form>
+        <form id="signup" hidden>
+            <header>
+                <h2>Signup</h2>
+                <br>
+                <p style="font-size: medium;">signup here by entering the required information</p>
+                <!-- <br> -->
+            </header>
+            <div class="wrapper" style="margin-bottom: 5px;">
+                <i class="Material-symbols-outlined" style="margin-bottom: 5px;">person</i>
+                <input type="text" placeholder="Username" required>
+            </div>
+            <div class="wrapper">
+                <i class="Material-symbols-outlined" style="margin-bottom: 5px;">mail</i>
+                <input type="mail" placeholder="Email" required>
+            </div>
+            <div class="wrapper">
+                <i class="Material-symbols-outlined" style="margin-bottom: 5px;">call</i>
+                <input type="number" placeholder="Phone" maxlength=11>
+            </div>
+            <div class="wrapper">
+                <i class="Material-symbols-outlined" style="margin-bottom: 5px;">lock</i>
+                <input type="password" placeholder="Password" id="password1">
+                <i onclick="change_show1()" class="Material-symbols-outlined show_pass showpass1"
+                    style="margin-bottom: 5px; height: 40px; width: 60px;"> visibility_off </i>
+            </div>
+            <div class="wrapper remember">
+                <input id="check" type="checkbox" style="margin-bottom: 5px; font-size: 2px;">
+                <label for="check">I agree term and conditions</label>
+            </div>
+            <button style="margin-bottom: 10px; background-color: rgba(30, 114, 34, 0.178);">signup</button>
+            <p class="footer" style="margin-bottom: 5px;">
+                already have an account <a href="#" onclick="switchmode()"> login</a>
+            </p>
+
+        </form>
+    </main>
+    <script>
+        var a = 0;
+        let Password = document.getElementById("password");
+        let icon = document.querySelector(".show_pass")
+        let Password1 = document.getElementById("password1");
+        let icon1 = document.querySelector(".showpass1")
+        function switchmode() {
+            document.body.classList.toggle("active");
+        }
+        function change_show() {
+            if (Password.type == "password") {
+                Password.type = "text";
+                icon.textContent = "visibility";
+            }
+            else {
+                Password.type = "password";
+                icon.textContent = "visibility_off";
+            }
+        }
+        function change_show1() {
+            if (Password1.type == "password") {
+                Password1.type = "text";
+                icon1.textContent = "visibility";
+            }
+            else {
+                Password1.type = "password";
+                icon1.textContent = "visibility_off";
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>

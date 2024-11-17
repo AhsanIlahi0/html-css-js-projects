@@ -1,0 +1,100 @@
+body {
+    background-color: #121212; /* Dark background */
+    color: #E0E0E0; /* Light text color */
+    text-transform: capitalize;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #FF6F00; /* Orange color */
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main {
+    background-color: #121212;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    grid-gap: 5px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.board > div {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    font-size: 40px;
+    cursor: pointer;
+    border: 1px solid #FF6F00; /* Orange border */
+    box-sizing: border-box;
+    background-color: #263238; /* Darker background for the board cells */
+    color: #E0E0E0; /* Light text color */
+    /* transition: background-color 0.3s ease; */
+    transition-duration: .3s;
+}
+
+.board > div:hover {
+    background-color: #37474F; /* Slightly lighter hover effect */
+}
+
+button {
+    /* margin-top: -10px; */
+    margin-left: calc(50% - 125px);
+    width: 250px;
+    height: 40px;
+    visibility: hidden;
+    cursor: pointer;
+    background-color: #FF6F00; /* Orange button */
+    border: none;
+    border-radius: 5px;
+    color: #121212; /* Dark text on button */
+    font-size: 16px;
+    font-weight: bold;
+    /* transition: background-color 0.3s ease; */
+    transition-duration: .3s ;
+}
+
+button:hover {
+    background-color: #FFA000; /* Lighter orange on hover */
+}
+
+#win {
+    font-size: 30px;
+    color: #FF6F00; /* Orange text */
+    text-align: center;
+}
+
+#container {
+    display: flex;
+    justify-content: center; /* Center the container */
+    margin-top: 20px; /* Add some spacing above the container */
+}
+
+#turn1, #turn2 {
+    visibility: hidden;
+    flex: 0.21;
+    font-size: 25px;
+    padding: 10px;
+    border: 1px solid #FF6F00; /* Orange border */
+    color: #FF6F00; /* Orange text */
+    margin: 0 10px; /* Add some spacing between the turn indicators */
+    
+}
+
+#turn1 {
+    visibility: visible;
+}
